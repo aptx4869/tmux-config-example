@@ -6,7 +6,7 @@
 #
 #     File: INSTALL.sh
 #     Create Date: 2012-08-07 10:31:38
-#     Fork from :
+#     Taken from :
 #         https://github.com/carlhuda/janus/blob/master/bootstrap.sh
 #     and https://github.com/robbyrussell/oh-my-zsh/blob/master/tools/install.sh
 #-------------------------------------------------
@@ -18,7 +18,7 @@ then
 	exit
 else
 	echo "\033[0;34mCloning tmux settings...\033[0m"
-	hash git >/dev/null && /usr/bin/env git clone --depth 1 --recursive git://github.com/aptx4869/oh-my-tmux.git ~/.tmux || {
+	hash git >/dev/null && /usr/bin/env git clone --depth 1 --recursive git://github.com/aptx4869/tmux-config-example.git ~/.tmux || {
 	echo "git not installed"
 	exit
 	}
