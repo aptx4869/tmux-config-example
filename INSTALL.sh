@@ -37,5 +37,5 @@ echo "\033[0;34mLink tmux configuration files...\033[0m"
 TMUX_SETTINGS="$HOME/.tmux"
 for i in .tmux.conf ; do
 	echo "\033[0;33mLinking ${i}\033[0m \033[0;32] from ${HOME}/${i}\033[0m";
-	ln -s "${TmUX_SETTINGS}/${i}" "$HOME/${i}"
+	ln -s "${TMUX_SETTINGS}/${i}" "$HOME/${i}"
 done
