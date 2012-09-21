@@ -18,6 +18,7 @@ You should check [tmux-powerline](https://github.com/erikw/tmux-powerline) for c
 
 ## ToDo
 * Add some explanation and tips
+
 ## Tips
 * 我讨厌英文，所以文件里面的注释都他瞄的用中文写的
 * 终端配色推荐使用solarize
