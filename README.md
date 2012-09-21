@@ -29,23 +29,24 @@ You should check [tmux-powerline](https://github.com/erikw/tmux-powerline) for c
 	    `tmux attach-session`
     +    再再打开一另外个terminal，然后输这个命令：
 	    `tmux attach-session -d`
-    +    Ctrl-g       m        man     <Enter>
-    +    Ctrl-g       !
-    +    Ctrl-g      C-w
-    +    Ctrl-g      C-w
-    +    Ctrl-g       c         c         c          c
-    +     Alt-1     Alt-2     Alt-0     Alt-~      Alt-~
-    +    Ctrl-g       \         -         -          \
-    +    Ctrl-g       h         j         k          l
-    +    Ctrl-g     Alt-h     Alt-j     Alt-k      Alt-l
-    +    Ctrl-g    Ctrl-h    Ctrl-j     Ctrl-k    Ctrl-l
-    +    Ctrl-g       <         <         <          <
-    +    Ctrl-g       >         >         >          >
-    +    Alt-F4
-    +    Ctrl-F4
-    +    Ctrl-g       s
-    +    Ctrl-g    Ctrl-[
-    +    Ctrl-g    Ctrl-]
-    +    Ctrl-g       [         v        kbb^     Ctrl-g    y
-    +    Ctrl-g       z
-
+<table>
+<tr><td>`Ctrl-g`</td><td>`m`</td><td>`tmux`</td><td>`<Enter>`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`!`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`C-w`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`C-w`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`c`</td><td>`c`</td><td>`c`</td><td>`c`</td></tr>
+<tr><td>`Alt-1`</td><td>`Alt-2`</td><td>`Alt-0`</td><td>`Alt-~`</td><td>`Alt-~`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`\`</td><td>`-`</td><td>`-`</td><td>`\`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`h`</td><td>`j`</td><td>`k`</td><td>`l`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`Alt-h`</td><td>`Alt-j`</td><td>`Alt-k`</td><td>`Alt-l`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`Ctrl-h`</td><td>`Ctrl-j`</td><td>`Ctrl-k`</td><td>`Ctrl-l`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`<`</td><td>`<`</td><td>`<`</td><td>`<`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`>`</td><td>`>`</td><td>`>`</td><td>`>`</td></tr>
+<tr><td>`Alt-F4`</td></tr>
+<tr><td>`Ctrl-F4`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`s`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`Ctrl-[`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`Ctrl-]`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`[`</td><td>`v`</td><td>`kbb^`</td><td>`Ctrl-g`</td><td>`y`</td></tr>
+<tr><td>`Ctrl-g`</td><td>`z`</td></tr>
+</table>
