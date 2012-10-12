@@ -20,33 +20,34 @@ You should check [tmux-powerline](https://github.com/erikw/tmux-powerline) for c
 * Add some explanation and tips
 
 ## Tips
-* 我讨厌英文，所以文件里面的注释都他瞄的用中文写的
+* 文件里面的注释都他瞄的用中文写的
 * 终端配色推荐使用solarize
 * 以下按键值得一试（各个按键间隔要在1秒中内）：
-    +    打开一个terminal，然后用这个命令打开tmux：
-	    `tmux attach-session`
-    +    再打开一另外个terminal，然后输入同一个命令：
-	    `tmux attach-session`
-    +    再再打开一另外个terminal，然后输这个命令：
-	    `tmux attach-session -d`
-<table>
-<tr><td>`Ctrl-g`</td><td>`m`</td><td>`tmux`</td><td>`<Enter>`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`!`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`C-w`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`C-w`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`c`</td><td>`c`</td><td>`c`</td><td>`c`</td></tr>
-<tr><td>`Alt-1`</td><td>`Alt-2`</td><td>`Alt-0`</td><td>`Alt-~`</td><td>`Alt-~`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`\`</td><td>`-`</td><td>`-`</td><td>`\`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`h`</td><td>`j`</td><td>`k`</td><td>`l`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`Alt-h`</td><td>`Alt-j`</td><td>`Alt-k`</td><td>`Alt-l`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`Ctrl-h`</td><td>`Ctrl-j`</td><td>`Ctrl-k`</td><td>`Ctrl-l`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`<`</td><td>`<`</td><td>`<`</td><td>`<`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`>`</td><td>`>`</td><td>`>`</td><td>`>`</td></tr>
-<tr><td>`Alt-F4`</td></tr>
-<tr><td>`Ctrl-F4`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`s`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`Ctrl-[`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`Ctrl-]`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`[`</td><td>`v`</td><td>`kbb^`</td><td>`Ctrl-g`</td><td>`y`</td></tr>
-<tr><td>`Ctrl-g`</td><td>`z`</td></tr>
-</table>
+
+        打开一个terminal，然后用这个命令打开tmux：
+	        tmux attach-session
+        再打开一另外个terminal，然后输入同一个命令：
+	        tmux attach-session
+        再再打开一另外个terminal，然后输这个命令：
+	        tmux attach-session -d
+        Ctrl-g       m        man     <Enter>
+        Ctrl-g       !
+        Ctrl-g      C-w
+        Ctrl-g      C-w
+        Ctrl-g      C-c       C-c       C-c        C-c
+        Alt-1     Alt-2     Alt-0     Alt-~      Alt-~
+        Ctrl-g       \         -         -          \
+        Ctrl-g       h         j         k          l
+        Ctrl-g     Alt-h     Alt-j     Alt-k      Alt-l
+        Ctrl-g    Ctrl-h    Ctrl-j     Ctrl-k    Ctrl-l
+        Ctrl-g       <         <         <          <
+        Ctrl-g       >         >         >          >
+        Alt-F4
+        Ctrl-F4
+        Ctrl-g       s
+        Ctrl-g    Ctrl-[
+        Ctrl-g    Ctrl-]
+        Ctrl-g       [         v        kbb^     Ctrl-g    y
+        Ctrl-g       ?
+        Ctrl-g       z
+
