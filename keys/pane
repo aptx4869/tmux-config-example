@@ -1,0 +1,41 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+# Pane management
+
+unbind '"'
+unbind '-'
+unbind '%'
+#bind -r - splitw -v           # 分割成上下两个窗格
+#bind -r \ splitw -h           # 分割成左右两个窗格
+bind -r - splitw -v -c "#{pane_current_path}" # 分割成上下两个窗格
+bind -r \ splitw -h -c "#{pane_current_path}" # 分割成左右两个窗格
+
+set -g  main-pane-height 25
+set -g  main-pane-width  62
+bind _  select-layout    main-horizontal
+bind |  select-layout    main-vertical
+bind 2  select-layout    even-horizontal
+bind 3  select-layout    even-vertical
+bind 1  select-layout    tiled
+
+bind  -r k selectp   -U       # 选择上窗格
+bind  -r j selectp   -D       # 选择下窗格
+bind  -r h selectp   -L       # 选择左窗格
+bind  -r l selectp   -R       # 选择右窗格
+
+bind  -r C-k resizep -U 3     # 改变窗格大小
+bind  -r C-j resizep -D 3     # 跟选择窗格的设置相同
+bind  -r C-h resizep -L 8     # 只是多加Ctrl（Ctrl-k）
+bind  -r C-l resizep -R 8     # ...
+
+#bind -r C-Left  resizep -L 1 # 改变窗格大小
+#bind -r C-Right resizep -R 1 # 跟上面相同
+#bind -r C-Down  resizep -D 1 # 只是幅度变小
+#bind -r C-Up    resizep -U 1 # 默认绑定
+
+bind  -r u swapp -U           # 与上窗格交换 Ctrl-u
+bind  -r d swapp -D           # 与下窗格交换 Ctrl-d
+bind  -r M-h run '~/.tmux/tmux-swap-pane.rb left'
+bind  -r M-l run '~/.tmux/tmux-swap-pane.rb right'
+bind  -r M-j run '~/.tmux/tmux-swap-pane.rb down'
+bind  -r M-k run '~/.tmux/tmux-swap-pane.rb up'
+bind  -r M-m run '~/.tmux/tmux-swap-pane.rb master'

@@ -1,0 +1,13 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+# Utils
+bind m command-prompt -p "查看手册：" "splitw -h 'exec man %%'"
+#bind @ command-prompt "splitw -h 'exec perldoc -f %%'"
+bind @ command-prompt -p "Ruby API:" "splitw -h 'exec ri %%|less'"
+#bind ! command-prompt -p "监视关键字:" "setw monitor-content %%"
+
+bind C-W if "tmux show-window-options|grep '-silence 30'" \
+"setw monitor-activity on  \; setw monitor-silence 0 \; "\
+"display '关闭空闲监视'" \
+"setw monitor-activity off \; setw monitor-silence 30 \; "\
+"display '开启空闲监视'"

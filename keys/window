@@ -1,0 +1,34 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+# Window management
+unbind '{'
+bind -r C-c new-window
+bind -n M-` last-window
+bind -n M-1 selectw   -t:1
+bind -n M-2 selectw   -t:2
+bind -n M-3 selectw   -t:3
+bind -n M-4 selectw   -t:4
+bind -n M-5 selectw   -t:5
+bind -n M-6 selectw   -t:6
+bind -n M-7 selectw   -t:7
+bind -n M-8 selectw   -t:8
+bind -n M-9 selectw   -t:9
+bind -n M-0 selectw   -t:0
+bind -n M-= selectw   -t:0
+
+bind -r M-` send-key  M-`
+bind -r M-1 send-key  M-1
+bind -r M-2 send-key  M-2
+bind -r M-3 send-key  M-3
+bind -r M-4 send-key  M-4
+bind -r M-5 send-key  M-5
+bind -r M-6 send-key  M-6
+bind -r M-7 send-key  M-7
+bind -r M-8 send-key  M-8
+bind -r M-9 send-key  M-9
+bind -r M-0 send-key  M-0
+bind -r M-= send-key  M-=
+
+bind -r < join-pane   -t :-.bottom-right
+bind -r > join-pane   -t :+.bottom-right
+bind / command-prompt -p "寻找窗口:" "findw %%"

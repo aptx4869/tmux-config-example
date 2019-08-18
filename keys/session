@@ -1,0 +1,14 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+# Session management
+unbind 'd'
+bind   ^d detach-client
+unbind 'x'
+bind    N switch-client -n
+bind    P switch-client -p
+bind    L switch-client -l
+#bind   -n C-F4 kill-pane
+#bind   -r C-F4 send-key  C-F4
+bind    z confirm -p "杀死当前所有会话?! y/n:" kill-session
+bind   M-F4 confirm  -p "杀死当前窗口? y/n:" kill-window
+#bind s choose-session

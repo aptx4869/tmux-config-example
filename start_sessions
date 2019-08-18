@@ -1,0 +1,68 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+# 新建名为 work 的会话
+new     -s work
+
+neww    -t :5 -n '✍ ' "zsh -l -c 'cd ~/workshop/z-turn && vim'"
+selectw -t :5
+
+#  系统监视
+neww    -t :2 -n ' ' 'slurm -L -i enp3s0'
+splitw  -dh  -p 62  -t :2 htop
+setw    -t :2 monitor-activity off
+setw    -t :2 monitor-silence 30
+selectw -t :2
+
+# 启动 rtorrent
+#neww    -t :6 -n ' ' rtorrent
+#setw    -t :6 monitor-activity off
+#setw    -t :6 monitor-silence 30
+#selectw -t :6
+
+# 启动 mutt
+neww    -t :4 -n ' ' mutt
+selectw -t :4
+#setw    -t :4 monitor-content '信箱中有新邮件'
+
+neww    -t :6 -n '✉ ' 'mutt -F .mutt/gmail.muttrc'
+selectw -t :6
+#setw    -t :6 monitor-content '信箱中有新邮件'
+
+# 默认选择标号为 5 的窗口
+neww    -t :7 'zsh -l'
+selectw -t :5
+
+
+#new -s work
+
+#if "tmux list-windows|grep '7: '" \
+#"setw quiet on" "neww -t :7 -n v vim \; selectw -t :7"
+
+## 网络流量监视
+#if "tmux list-windows|grep '⎈ '" \
+#"setw quiet on" \
+#"neww -t :2 -n '⎈ ' 'slurm -L -i enp3s0' \; "\
+#"setw -t :2 monitor-activity off \; "\
+#"setw -t :2 monitor-silence 30 \; selectw -t :2"
+
+## 启动 rtorrent
+#if "tmux list-windows|grep '♫ '" \
+#"setw quiet on" \
+#"neww -t :4 -n '♫ ' rtorrent \; "\
+#"setw -t :4 monitor-activity off \; "\
+#"setw -t :4 monitor-silence 30 \; selectw -t :4"
+
+## 启动 mutt
+#if "tmux list-windows|grep '✉ '" \
+#"setw quiet on" "neww -t :6 -n '✉ ' mutt \; "\
+#"selectw -t :6 \; setw -t :6 monitor-content '信箱中有新邮件'"
+
+##if "tmux list-windows|grep '5: '" \
+##"setw quiet on" "neww -t :5 zsh \; selectw -t :5"
+#neww    -t :5 zsh
+
+#selectw -t :2
+#selectw -t :4
+#selectw -t :6
+#selectw -t :7
+#selectw -t :5

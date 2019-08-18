@@ -1,0 +1,40 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+# Enable tumx powerline  {{{
+set-option -g status              on
+set-option -g status-interval     2
+# set-option -g status-utf8         on
+set-option -g status-justify      "centre"
+set-option -g status-left-length  60
+set-option -g status-right-length 90
+set-option -g status-left "#(~/.tmux/tmux-powerline/powerline.sh left)"
+set-option -g status-right "#(~/.tmux/tmux-powerline/powerline.sh right)"
+# Mute left statusbar.
+bind C-[ run '~/.tmux/tmux-powerline/mute_powerline.sh left'
+# Mute right statusbar.
+bind C-] run '~/.tmux/tmux-powerline/mute_powerline.sh right'
+# }}}
+
+# Custom colors     {{{
+set   -g status-bg                     "#002b36"
+set   -g status-fg                     "#E6E5E2"
+setw  -g window-status-current-bg      "#0087ff"
+setw  -g window-status-current-fg      "#000000"
+setw  -g window-status-bell-bg         "#5F5Faf"
+setw  -g window-status-bell-fg         "#FFFFD7"
+setw  -g window-status-activity-fg     "#EFEF1F"
+setw  -g window-status-activity-bg     "#000033"
+setw  -g window-status-bg              "#E4E4E4"
+setw  -g window-status-fg              "#262626"
+set   -g window-status-format          "#I:#W "
+set   -g window-status-current-format  "#I:#W "
+# }}}
+
+# Title                  {{{
+# automatically set window title
+set  -g automatic-rename
+set  -g set-titles               on
+setw -g monitor-activity         on
+setw -g monitor-bell off
+# set  -g quiet                    on
+# }}}

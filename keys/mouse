@@ -1,0 +1,7 @@
+# vim: set sw=4 sts=4 ft=tmux et fdm=marker fdc=3 fdl=0:
+
+set   -g mouse on
+# unbind-key -n MouseDown1Pane
+unbind-key -n MouseDown3Pane
+unbind-key -n MouseDrag1Pane
+# unbind-key -n WheelUpPane
